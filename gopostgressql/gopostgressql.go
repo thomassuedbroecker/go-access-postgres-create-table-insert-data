@@ -35,9 +35,6 @@ func main() {
 	// Get file with statements from GitHub
 
 	// 1. Create HTTP request "github"
-	// =======================
-	//
-
 	req, err := http.NewRequest("GET", "https://api.github.com/repos/IBM/multi-tenancy/contents/installapp/postgres-config/create-populate-tenant-a.sql", nil)
 	if err != nil {
 		log.Fatalln(err)
@@ -113,7 +110,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "QueryRow failed: %v\n", err)
 		os.Exit(1)
 	} else {
-		fmt.Println("Return values of the Table: ", name, price)
+		fmt.Println("Return values of the table: ", name, price)
 		fmt.Println()
 	}
 
