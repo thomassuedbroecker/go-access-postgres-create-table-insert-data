@@ -13,6 +13,20 @@ Connect and create tables / insert data to PostgresSQL database.
 3. Execute the SQL statement
 4. Verify one value with a query 
 
+### Basic programming steps
+
+1. Create HTTP request "github"
+2. Define header
+3. Create client
+4. Invoke HTTP request
+5. Verify the request status
+6. Get only body from response
+7. Convert body to json content
+8. Extract and decode file content from json
+9. Connect to a database
+10. Create a sql statements from file content
+11. Verify the created tables with a query	
+
 ### Some useful resources:
 
 * [How to convert an HTTP response body to a string in Go][https://freshman.tech/snippets/go/http-response-to-string/]
@@ -20,6 +34,13 @@ Connect and create tables / insert data to PostgresSQL database.
 * [How to get a file via GitHub APIs](https://stackoverflow.com/questions/9272535/how-to-get-a-file-via-github-apis)
 * [Go by Example: JSON](https://gobyexample.com/json)
 * [Access HTTP response as string in Go](https://stackoverflow.com/questions/38673673/access-http-response-as-string-in-go)
+
+
+### Run the example application
+
+This are the step you need to follow to run the example.
+
+>Note: You need a running PostgresSQL database somewhere
 
 ### Step 1: Git clone
 
