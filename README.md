@@ -29,7 +29,7 @@ Connect and create tables / insert data to PostgresSQL database.
 
 ### Some useful resources:
 
-* [How to convert an HTTP response body to a string in Go][https://freshman.tech/snippets/go/http-response-to-string/]
+* [How to convert an HTTP response body to a string in Go](https://freshman.tech/snippets/go/http-response-to-string/)
 * [Go by Example: Base64 Encoding](https://gobyexample.com/base64-encoding)
 * [How to get a file via GitHub APIs](https://stackoverflow.com/questions/9272535/how-to-get-a-file-via-github-apis)
 * [Go by Example: JSON](https://gobyexample.com/json)
@@ -40,7 +40,7 @@ Connect and create tables / insert data to PostgresSQL database.
 
 This are the step you need to follow to run the example.
 
->Note: You need a running PostgresSQL database somewhere
+> Note: You need a running PostgresSQL database somewhere
 
 ### Step 1: Git clone
 
