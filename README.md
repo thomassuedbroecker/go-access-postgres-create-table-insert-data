@@ -27,6 +27,23 @@ Connect and create tables / insert data to PostgresSQL database.
 10. Create a sql statements from file content
 11. Verify the created tables with a query	
 
+
+### Understand the GitHub url format
+
+For more details visit the [GitHub public APIs ](https://github.com/public-apis/public-apis)
+
+* Example url we use: `https://api.github.com/repos/IBM/multi-tenancy/contents/installapp/postgres-config/create-populate-tenant-a.sql`
+
+Mapping to the GitHub API endpoint: `https://api.github.com/repos/$NAME/$REPO/contents/$FILENAME`
+
+These are the related values to example endpoint above:
+
+* GitHub API:       https://api.github.com/repos/
+* Name:             "IBM/"
+* Repo:             "multi-tenancy"
+* GitHub API:           /contents/
+* Filename: "installapp/postgres-config/create-populate-tenant-a.sql"
+
 ### Some useful resources:
 
 * [How to convert an HTTP response body to a string in Go](https://freshman.tech/snippets/go/http-response-to-string/)
