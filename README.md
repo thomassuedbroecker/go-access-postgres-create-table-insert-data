@@ -72,7 +72,7 @@ cd go-access-postgres-example
 cd gopostgressql
 ```
 
-### Step 3: Set the enviornment variable
+### Step 3: Set the environment variable
 
 ```sh
 export DATABASE_URL="postgres://username:password@localhost:5432/database_name"
