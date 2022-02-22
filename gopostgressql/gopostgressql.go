@@ -37,14 +37,7 @@ func main() {
 	// 1. Create HTTP request "github"
 	// =======================
 	//
-	// https://api.github.com/repos/IBM/multi-tenancy/contents/installapp/postgres-config/create-populate-tenant-a.sql
-	//
-	// * GitHub:           https://api.github.com/repos/
-	// * Name:             "IBM/"
-	// * Repo:             "multi-tenancy"
-	// * GitHub:           /contents/
-	// * Name of the file: "installapp/postgres-config/create-populate-tenant-a.sql"
-	//
+
 	req, err := http.NewRequest("GET", "https://api.github.com/repos/IBM/multi-tenancy/contents/installapp/postgres-config/create-populate-tenant-a.sql", nil)
 	if err != nil {
 		log.Fatalln(err)
