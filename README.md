@@ -1,10 +1,10 @@
 # Connect to postgresSQL db and create tables/insert data
 
-The example is related to [pgx - PostgreSQL Driver and Toolkit](https://github.com/jackc/pgx)
+That example is related to [pgx - PostgreSQL Driver and Toolkit](https://github.com/jackc/pgx)
 
 ### Objective
 
-Connect and create tables / insert data to PostgresSQL database.
+Connect to database, create tables, insert data.
 
 ### Basic flow 
 
@@ -84,4 +84,44 @@ export DATABASE_URL="postgres://username:password@localhost:5432/database_name"
 go run  .
 ```
 
+### Additional information
+
+#### GitHub configration
+
+* The GO struct which does reflect the GitHub response JSON structure
+
+```go
+type GitHubFile struct {
+	Name         string
+	Path         string
+	Sha          string
+	Size         uint64
+	Url          string
+	Html_url     string
+	Git_url      string
+	Download_url string
+	Type         string
+	Content      string
+}
+```
+
+* The JSON structure of the GitHub response
+
+```json
+{"name":"create-populate-tenant-a.sql",
+ "path":"installapp/postgres-config/create-populate-tenant-a.sql",
+ "sha":"95d9bd66b1d9bb18c6cb2e36f84bc91396713710",
+ "size":4296,
+ "url":"https://api.github.com/repos/IBM/multi-tenancy/contents/installapp/postgres-config/create-populate-tenant-a.sql?ref=main",
+ "html_url":"https://github.com/IBM/multi-tenancy/blob/main/installapp/postgres-config/create-populate-tenant-a.sql",
+ "git_url":"https://api.github.com/repos/IBM/multi-tenancy/git/blobs/95d9bd66b1d9bb18c6cb2e36f84bc91396713710",
+ "download_url":"https://raw.githubusercontent.com/IBM/multi-tenancy/main/installapp/postgres-config/create-populate-tenant-a.sql",
+ "type":"file",
+ "content":"Q1JFQVRFIFNFUVVFTkNFI...",
+ "encoding":"base64",
+ "_links":{"self":"https://api.github.com/repos/IBM/multi-tenancy/contents/installapp/postgres-config/create-populate-tenant-a.sql?ref=main",
+ "git":"https://api.github.com/repos/IBM/multi-tenancy/git/blobs/95d9bd66b1d9bb18c6cb2e36f84bc91396713710",
+ "html":"https://github.com/IBM/multi-tenancy/blob/main/installapp/postgres-config/create-populate-tenant-a.sql"
+}
+```
 
